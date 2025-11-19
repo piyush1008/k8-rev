@@ -1,0 +1,55 @@
+ 8401  kind create cluster --config cluster.yml --name local
+ 8402  docke rps
+ 8403  docker ps
+ 8404  clear
+ 8405  docker ps
+ 8406  kubectl
+ 8407  clear
+ 8408  docker ps
+ 8409  cat ~/.kube/config
+ 8410  clear
+ 8411  docker ps
+ 8412  kubectl get pods
+ 8413  kubectl get nodes
+ 8414  clear
+ 8415  kubectl get nodes
+ 8416  cat ~/.kube/config
+ 8417  clear
+ 8418  kubectl get nodes
+ 8419  kubectl get nodes --v=8
+ 8420  clear
+ 8421  kubectl run nginxpod --image=nginx --port=80
+ 8422  docker ps
+ 8423  kubectl get pods
+ 8424  kubectl get pods --v=8
+ 8425  k logs nginxpod
+ 8426  clear
+ 8427  k get pods
+ 8428  k run mongopod --image=mongo
+ 8429  k get pods
+ 8430  k get pods -w
+ 8431  clear
+ 8432  k get pods
+ 8433  k describe pod nginxpod
+ 8434  k get pods
+ 8435  k describe pod mongopod
+ 8436  k get pds
+ 8437  k get pods
+ 8438  k delete pod mongopod
+ 8439  k delete pod nginxpod
+ 8440  clear
+ 8441  k get pods
+ 8442  claer
+ 8443  clear
+ 8444  kind delete cluster -n local
+ 8445  clear 
+ 8446  docker ps
+ 8447  clear
+ 8448  kind create cluster --config cluster.yml --name local
+ 8449  kubectl apply -f manifest.yml
+ 8450  k get pfs
+ 8451  k get pods
+ 8452  k get nodes
+
+
+ k scale deployment nginx-deployment --replicas 1  
