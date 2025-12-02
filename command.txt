@@ -53,3 +53,10 @@
 
 
  k scale deployment nginx-deployment --replicas 1  
+
+  9059* k get pods
+ 9060* k logs -f todo-app-backend-5858f6c497-vhkhs 
+ 9061* k exec -it todo-app-backend-5858f6c497-vhkhs  -c todoapptest -- /bin/bash
+ 9062  clear
+ 9063  docker run -p 3000:3000 -e PORT=3000 -e DATABASE_URL=XXXX piyush1008/todo-app-test:1
+ 9064  clear
